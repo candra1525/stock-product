@@ -81,8 +81,6 @@
         <header>
             <h1>Detail Products</h1>
         </header>
-        {{-- Delete Product || Edit Product --}}
-        {{-- Tabel --}}
         <div class="container">
             <table border="1">
                 <tr>
@@ -139,5 +137,3 @@
         </div>
     </body>
 </html>
-
-
