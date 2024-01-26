@@ -1,0 +1,13 @@
+Buatlah daftar stok product, setiap data product memiliki data : 
+- id_product
+- nama_product
+- description_product
+- stock_amount
+- id_supplier (relasi dengan tabel supplier)
+- status (active/inactive)
+- created_at
+- updated_at
+
+* Tabel Supplier
+- id_supplier
+- nama_supplier
