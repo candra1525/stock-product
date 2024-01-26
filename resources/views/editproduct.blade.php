@@ -75,6 +75,7 @@
                                 id="nama_product"
                                 value="{{$product->nama_product}}"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
@@ -88,6 +89,7 @@
                                 id="description_product"
                                 cols="57"
                                 rows="10"
+                                required
                             >
                             {{$product->description_product}}
                         </textarea
@@ -105,6 +107,7 @@
                                 id="stock_amount"
                                 value="{{$product->stock_amount}}"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
@@ -119,6 +122,7 @@
                                 id="id_supplier"
                                 value="{{$product->id_supplier}}"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
@@ -133,6 +137,7 @@
                                 id="status"
                                 value="{{$product->status}}"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>

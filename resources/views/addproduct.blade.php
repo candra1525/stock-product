@@ -71,6 +71,7 @@
                                 name="nama_product"
                                 id="nama_product"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
@@ -84,6 +85,7 @@
                                 id="description_product"
                                 cols="57"
                                 rows="10"
+                                required
                             >
                             </textarea>
                         </td>
@@ -98,6 +100,7 @@
                                 name="stock_amount"
                                 id="stock_amount"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
@@ -111,6 +114,7 @@
                                 name="id_supplier"
                                 id="id_supplier"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
@@ -124,6 +128,7 @@
                                 name="status"
                                 id="status"
                                 style="width: 400px"
+                                required
                             />
                         </td>
                     </tr>
