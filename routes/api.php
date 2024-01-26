@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductApiController;
+use App\Http\Controllers\SupplierApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/product', [ProductApiController::class ,'index']);
+Route::post('/product', [ProductApiController::class ,'store']);
+Route::get('/product/{id}', [ProductApiController::class ,'show']);
+Route::put('/product/{id}', [ProductApiController::class ,'update']);
+Route::delete('/product/{id}', [ProductApiController::class ,'destroy']);
+
+Route::get('/supplier', [SupplierApiController::class ,'index']);
+Route::post('/supplier', [SupplierApiController::class ,'store']);
+Route::get('/supplier/{id}', [SupplierApiController::class ,'show']);
+Route::put('/supplier/{id}', [SupplierApiController::class ,'update']);
+Route::delete('/supplier/{id}', [SupplierApiController::class ,'destroy']);

@@ -18,6 +18,7 @@ class ProductApiController extends Controller
             return response()->json([
                 'code' => Response::HTTP_OK,
                 'message'=> 'Product data displays successfully',
+                'data' => $product
             ]);
         }
         catch(Exception $e){
@@ -33,7 +34,7 @@ class ProductApiController extends Controller
         $validate = Validator::make($request->all(), [
             'nama_product' => 'required|string',
             'description_product' => 'required|string',
-            'stock_amount' => 'required|integer',,
+            'stock_amount' => 'required|integer',
             'id_supplier' => 'required|integer',
             'status' => 'required|string',
         ]);
@@ -90,7 +91,7 @@ class ProductApiController extends Controller
             $validate = Validator::make($request->all(), [
                 'nama_product' => 'string',
                 'description_product' => 'string',
-                'stock_amount' => 'integer',,
+                'stock_amount' => 'integer',
                 'id_supplier' => 'integer',
                 'status' => 'string',
             ]);
