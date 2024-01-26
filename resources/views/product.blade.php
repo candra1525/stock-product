@@ -104,6 +104,11 @@
             .add-product button:hover {
                 font-weight: bold;
             }
+
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
     </head>
     <body>
